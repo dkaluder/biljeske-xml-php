@@ -87,18 +87,20 @@ function spremi($naslov, $opis, $datum, $vrijeme,$username,$ime,$prezime) {
 			<h2 class="form-signin-heading">Dodaj bilješku</h2><hr/>
 		</div>
 		<div class="form-group">
-			<label for="opis">Naslov bilješke</label>
-			<input type="text" class="form-control" placeholder="Naslov" name="naslov" required />
+			<label for="naslov">Naslov bilješke</label>
+			<input type="text" class="form-control" placeholder="Naslov" name="naslov" id ="naslov" required />
+			<small id="naslovHelp" class="form-text text-muted"></small>
 			<br>
 		</div>
 		<div class="form-group">
 			<label for="opis">Unesi bilješku</label>
 			<textarea class="form-control" name="opis" rows="7" id="opis"></textarea>
 			<small id="opisHelp" class="form-text text-muted"></small>
+			<br>
 		 </div>
 	
 			<br>
-			<input name="submit" class="btn btn-large btn-primary " type="submit" value=" Pohrani ">
+			<input name="submit" class="btn btn-large btn-primary " type="submit" value=" Pohrani " id="spremi">
 			</div>
 		</form>
     
@@ -111,9 +113,9 @@ function spremi($naslov, $opis, $datum, $vrijeme,$username,$ime,$prezime) {
 </div>
 
 <footer class="container-fluid text-center navbar-fixed-bottom">
-  <p>Footer
+  <p>
   </p>
 </footer>
-
+<script src="kontrolDodaj.js"></script>
 </body>
 </html>

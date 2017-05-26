@@ -91,18 +91,22 @@ function spremi($username, $password,$ime,$prezime) {
 			<h2 class="form-signin-heading">Sign Up.</h2><hr/>
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Username" name="username" required />
+			<input type="text" class="form-control" placeholder="Username" name="username" id="username" required />
+			<small id="usernameHelp" class="form-text text-muted"></small>
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Ime" name="ime" required />
+			<input type="text" class="form-control" placeholder="Ime" name="ime" id="ime" required />
+			<small id="imeHelp" class="form-text text-muted"></small>
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Prezime" name="prezime" required />
+			<input type="text" class="form-control" placeholder="Prezime" name="prezime" id="prezime" required />
+			<small id="prezimeHelp" class="form-text text-muted"></small>
 		</div>
 		<div class="form-group">
-			<input type="password" class="form-control" placeholder="Password" name="password" required />
+			<input type="password" class="form-control" placeholder="Password" name="password" id="password" required />
+			<small id="passwordHelp" class="form-text text-muted"></small>
 			<hr />
-			<input name="submit" class="btn btn-large btn-primary " type="submit" value=" Signup ">
+			<input name="submit" class="btn btn-large btn-primary " type="submit" value=" Signup " id="spremi">
 		</div>	
 		</form>
     
@@ -111,9 +115,9 @@ function spremi($username, $password,$ime,$prezime) {
 
 
 <footer class="container-fluid text-center navbar-fixed-bottom">
-  <p>Footer Text</p>
+  <p></p>
 </footer>
-
+<script src="kontrolSignup.js"></script>  
 </body>
 </html>
 
